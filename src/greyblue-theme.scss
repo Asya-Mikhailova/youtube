@@ -1,0 +1,19 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+$greyblue-theme-primary: mat-palette($mat-grey, 300, 200, 100);
+$greyblue-theme-accent: mat-palette($mat-blue, A700, A400, A200);
+$greyblue-theme-warn: mat-palette($mat-red);
+
+$greyblue-theme: mat-light-theme(
+  (
+    color: (
+      primary: $greyblue-theme-primary,
+      accent: $greyblue-theme-accent,
+      warn: $greyblue-theme-warn,
+    ),
+  )
+);
+
+@include angular-material-theme($greyblue-theme);

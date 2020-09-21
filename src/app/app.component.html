@@ -1,0 +1,5 @@
+<router-outlet></router-outlet>
+<div class="wrapper">
+  <app-header (showResults)="onDisplayResults($event)"></app-header>
+  <app-search-results *ngIf="loadedResults"></app-search-results>
+</div>

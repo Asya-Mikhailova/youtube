@@ -1,0 +1,115 @@
+//HEADER SECTION//
+.header {
+  height: 80px;
+  background-color: #e5e5e5;
+}
+
+.header-container {
+  display: flex;
+  width: 785px;
+  align-items: center;
+  margin-left: 432px;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.searching-input {
+  width: 396px;
+  height: 24px;
+  border: none;
+  background: #efefef;
+  font-size: 12px;
+  color: #929292;
+  align-items: center;
+}
+
+.searching-input::placeholder {
+  padding-left: 5px;
+}
+
+.searching-btn {
+  width: 80px;
+  height: 26px;
+  background: #2f80ed;
+  border-radius: 0px 4px 4px 0px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  margin-right: 10px;
+  filter: drop-shadow(2px 0px 4px #2f80ed);
+}
+
+.filter-btn {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border: none;
+  background-image: url("../../../assets/search_settings.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1.55em;
+  margin-right: 148px;
+}
+
+.login-name {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  font-family: "Roboto";
+  color: #4f4f4f;
+  width: 102px;
+  margin-right: 10px;
+}
+
+.login {
+  width: 34px;
+  height: 34px;
+}
+
+//FILTER SECTION//
+
+.filter {
+  height: 50px;
+  background-color: #e5e5e5;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  height: 14px;
+  width: 422px;
+  justify-content: space-between;
+  margin-left: 432px;
+}
+
+.filter-by {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #929292;
+  margin-right: 11px;
+}
+
+.filter-criteria {
+  cursor: pointer;
+  font-size: 12px;
+  color: #2f80ed;
+  margin-right: 21px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.filter-input {
+  width: 149px;
+  height: 13px;
+  border: none;
+  background: #fff;
+  margin-left: -10px;
+}

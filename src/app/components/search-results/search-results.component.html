@@ -1,0 +1,9 @@
+<div class="search-results">
+  <div class="search-results-container">
+    <app-search-item
+      class="search-result-item"
+      *ngFor="let resultEl of results | filter: searchInput"
+      [result]="resultEl"
+    ></app-search-item>
+  </div>
+</div>

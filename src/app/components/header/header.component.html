@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="header">
+    <div class="header-container">
+      <img class="logo" [src]="logoImagePath" />
+      <input
+        class="searching-input"
+        type="text"
+        placeholder="What do you want to find out?"
+      />
+      <button
+        class="searching-btn"
+        mat-raised-button
+        color="accent"
+        (click)="onShowingResults(true)"
+      >
+        search
+      </button>
+      <button (click)="onFilterToggle()" class="filter-btn"></button>
+      <span class="login-name">Your Name</span>
+      <img class="login" [src]="loginImagePath" />
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row class="filter" *ngIf="isFilterOn">
+    <div class="filter-container">
+      <span class="filter-by">Sorting by:</span>
+      <span class="filter-criteria underlined">date</span>
+      <span class="filter-criteria underlined">count of views</span>
+      <span class="filter-criteria">by word or sentence</span>
+      <input class="filter-input" type="text" [(ngModel)]="searchInput" />
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

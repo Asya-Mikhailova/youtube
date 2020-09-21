@@ -1,0 +1,28 @@
+<mat-card [publicationDate]="publicationDate" appBorderColor>
+  <img
+    class="search-item-image"
+    src="#"
+    alt="thumbnail-image"
+    [src]="result.snippet.thumbnails.medium.url"
+  />
+  <div class="statistics-container">
+    <div class="statistics-item">
+      <img src="../../../assets/viewed.png" alt="" />
+      <span>{{ result.statistics.viewCount }}</span>
+    </div>
+    <div class="statistics-item">
+      <img src="../../../assets/liked.png" alt="" />
+      <span>{{ result.statistics.likeCount }}</span>
+    </div>
+    <div class="statistics-item">
+      <img src="../../../assets/dislike.png" alt="" />
+      <span>{{ result.statistics.dislikeCount }}</span>
+    </div>
+    <div class="statistics-item">
+      <img src="../../../assets/copied.png" alt="" />
+      <span>{{ result.statistics.commentCount }}</span>
+    </div>
+  </div>
+  <h2 class="title">{{ result.snippet.title }}</h2>
+  <button class="btn">more...</button>
+</mat-card>
